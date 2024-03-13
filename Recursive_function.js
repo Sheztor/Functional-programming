@@ -1,20 +1,26 @@
-function fibonacci(n) {
-    if (n <= 1) {
-        return n;
-    } else {
-        return fibonacci(n - 1) + fibonacci(n - 2);
+function factorial(n){
+
+ //Base case : if n is 0 or 1, return 1
+if(n == 0 || n == 1){
+    return 1;
+
+}else {
+ //Recursive case: return n times the factorial
+    return n * factorial(n - 1);
     }
 }
 
-// Get the Fibonacci term to calculate
-const limit = parseInt(process.argv[2]);
+console.log(factorial(5)); // 120
 
-// Validate user input
-if (isNaN(limit) || limit < 0) {
-    console.log("Please enter a valid positive number.");
-} else {
-    console.log("Fibonacci sequence up to the " + limit + "th term:");
-    for (let i = 0; i < limit; i++) {
-        console.log(fibonacci(i));
-    }
-}
+//function fibonacci(n){
+
+//if(n<=1){
+//    return n;
+//} else {
+//
+//    return fibonacci(n-1) + fibonacci(n-2);
+//
+//    }
+//}
+
+//console.log(fibonacci(7)); // 13
