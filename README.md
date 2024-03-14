@@ -35,3 +35,37 @@ console.log(factorial(5)); // Output: 120
 ```
 
 In this example, the factorial function calculates the factorial of a given number n. It does this by recursively calling itself with n - 1, until it reaches the base case where n is 0 or 1, at which point it returns 1. Then, it combines the results of the recursive calls to calculate the factorial of the original n.
+
+
+## Pure Functions
+
+These are functions that produce the same result for the same arguments and have no observable side effects. This facilitates reasoning about program behavior and enhances testability and modularity.
+
+#### Code example
+
+```JS
+const square = (x) => x * x; // Función pura
+
+console.log(square(3)); // Output: 9
+```
+
+#### Example of impurity: it's working with a global variable, if it changes, our output will change too.
+```JS
+let x = 5;
+
+function notPureFunction(y) {
+  return x + y;
+}
+```
+## Immutability
+
+Immutability implies that data does not change once created. In functional programming, immutable data structures are preferred, which means they are not directly modified but instead new instances are created with the necessary changes.
+
+#### Code example
+
+```JS
+const originalArray = [1, 2, 3];
+const modifiedArray = originalArray.concat(4); // Create a new array
+console.log(originalArray); // Output: [1, 2, 3]
+console.log(modifiedArray); // Output: [1, 2, 3, 4]
+```
