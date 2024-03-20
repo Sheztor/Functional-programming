@@ -1,5 +1,8 @@
 # :gear: Functional Programming - JavaScript
 
+:clapper: Playlist of the videos made
+Link [here](https://www.youtube.com/playlist?list=PL4m9QRz8Ry0coZSr3sTYX9S_RTDOkFJM5)
+
 ## First-class functions
 
 In JavaScript, functions are first-class, which means they can be assigned to variables, passed as arguments to other functions, and returned as values from other functions.
